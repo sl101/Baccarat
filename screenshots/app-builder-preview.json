@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Baccarat",
+      "hasCanvas": false,
+      "bodyTextLen": 64,
+      "bodyTextHash": "e388e8c117461da59bef649f4f15d901c48df67cfd22595464f0478bafd435f4",
+      "bodyTextPrefix": "Roulette training DealerForge Baccarat Training Modes Rules Deal",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Baccarat",
+      "hasCanvas": false,
+      "bodyTextLen": 64,
+      "bodyTextHash": "e388e8c117461da59bef649f4f15d901c48df67cfd22595464f0478bafd435f4",
+      "bodyTextPrefix": "Roulette training DealerForge Baccarat Training Modes Rules Deal",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
