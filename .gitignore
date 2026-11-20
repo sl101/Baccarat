@@ -49,3 +49,14 @@ test-results/
 *.tsbuildinfo
 
 android.keystore
+
+# Android / TWA
+baccarat-twa/.gradle/
+baccarat-twa/build/
+baccarat-twa/app/build/
+baccarat-twa/*.apk
+baccarat-twa/*.aab
+baccarat-twa/*.idsig
+baccarat-twa/local.properties
+*.jks
+*.keystore
