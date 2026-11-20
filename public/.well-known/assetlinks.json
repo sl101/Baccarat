@@ -1,0 +1,17 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.vercel.baccarat_pi.twa",
+      "sha256_cert_fingerprints": [
+        "77:DF:B0:26:A1:47:9E:DD:B4:1C:FC:4B:4C:26:FB:38:69:FE:93:1E:E8:3B:E6:E5:AC:4E:6F:80:1A:AE:25:51",
+        "29:5F:F4:4F:9E:51:44:1E:30:38:D2:B3:64:75:FD:19:64:9B:B7:A0:A6:98:40:F1:78:B5:8A:D3:8C:05:AA:17",
+        "35:6A:48:CE:A9:91:1A:A0:E8:26:EA:98:55:A7:9C:F9:3E:A2:C5:95:E9:B5:17:55:DC:97:7E:B1:A7:EB:A1:EB"
+      ]
+    }
+  }
+]

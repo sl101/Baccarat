@@ -47,3 +47,5 @@ coverage/
 playwright-report/
 test-results/
 *.tsbuildinfo
+
+android.keystore
