@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DealRouteImport } from './routes/deal'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as RulesRouteImport } from './routes/rules'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,6 +24,11 @@ const DealRoute = DealRouteImport.update({
   path: '/deal',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RulesRoute = RulesRouteImport.update({
   id: '/rules',
   path: '/rules',
@@ -32,30 +38,34 @@ const RulesRoute = RulesRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/deal': typeof DealRoute
+  '/privacy': typeof PrivacyRoute
   '/rules': typeof RulesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/deal': typeof DealRoute
+  '/privacy': typeof PrivacyRoute
   '/rules': typeof RulesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/deal': typeof DealRoute
+  '/privacy': typeof PrivacyRoute
   '/rules': typeof RulesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/deal' | '/rules'
+  fullPaths: '/' | '/deal' | '/privacy' | '/rules'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/deal' | '/rules'
-  id: '__root__' | '/' | '/deal' | '/rules'
+  to: '/' | '/deal' | '/privacy' | '/rules'
+  id: '__root__' | '/' | '/deal' | '/privacy' | '/rules'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DealRoute: typeof DealRoute
+  PrivacyRoute: typeof PrivacyRoute
   RulesRoute: typeof RulesRoute
 }
 
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DealRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/rules': {
       id: '/rules'
       path: '/rules'
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DealRoute: DealRoute,
+  PrivacyRoute: PrivacyRoute,
   RulesRoute: RulesRoute,
 }
 export const routeTree = rootRouteImport
